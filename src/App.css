@@ -1,38 +1,72 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  background-color: #2d2e38;
+  font-family: Bebas Neue;
+  font-size: 10px;
+}
+::placeholder {
+  font-family: Bebas Neue;
+  font-size: 20px;
+}
+h1 {
+  font-weight: normal;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-size: 90px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li {
+  font-size: 30px;
+  font-weight: bold;
   color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+input {
+  margin: 7px 18px;
+  font-size: 20px;
+  width: 50%;
+  padding: 10px 0;
+  text-indent: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  color: white;
+  text-indent: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="text"]:focus {
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.b {
+  cursor: pointer;
+}
+
+button {
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 4px;
+  font-weight: normal;
+  font-family: Bebas Neue;
+  font-size: 25px;
+  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
+  color: red;
+  width: 20%;
+  padding: 5px 0px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+form {
+  display: grid;
+  place-items: center;
+  margin: 5%;
 }
