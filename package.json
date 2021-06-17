@@ -1,6 +1,6 @@
 {
   "name": "todo-app",
-  "homepage": "https://e11012.github.io/ToDo_List",
+  "homepage": "https://e11012.github.io/todo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
