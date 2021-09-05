@@ -1,9 +1,19 @@
 import "./App.css";
 
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 
 function App() {
-  const [todos, setTodos] = useState(["you can delete this by clicking on it"]);
+  const get=()=>{
+    let list=localStorage.getItem('lists')
+    console.log(list);
+    if (list){
+      return  JSON.parse(localStorage.getItem('lists'));
+
+    }else{
+      return[""]
+    }
+  }
+  const [todos, setTodos] = useState(get());
   const [inputState, setInputState] = useState("");
 
   const Add = (e) => {
@@ -23,6 +33,9 @@ function App() {
       Add();
     }
   };
+  useEffect(()=>{
+    localStorage.setItem('lists',JSON.stringify(todos))
+  },[todos]);
 
   return (
     <div className="App">
@@ -52,4 +65,5 @@ function App() {
 }
 
 export default App;
+
 
